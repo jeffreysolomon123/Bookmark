@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+npm-debug.log
+
+# Logs
+logs
+*.log
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+
+# Frontend build files
+/build
+/dist
+
+# Dependency directories
+jspm_packages/
+bower_components/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+
+#
