@@ -3,6 +3,8 @@ import Header from "../Components/Header";
 import Gallery from '../Components/Gallery';
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import '../App.css';
+
 
 
 function Home() {
@@ -33,12 +35,6 @@ function Home() {
                 displayDashboardButton = "block"
                 displayLogOutButton = "none"
             />
-            
-            {userInfo && (
-                <div>
-                    <h1>{userInfo.id}</h1>
-                </div>
-            )}
             <Gallery />
 
         </div>

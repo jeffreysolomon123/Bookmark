@@ -55,8 +55,9 @@ function BookCardDash(props) {
 
 
     return (
-        <div>
-            <div className="card book-card" style={{ width: "200px" }}>
+        <div style={{display:"flex", justifyContent:"center"}}>
+        <div className="totalbookcarddashboard">
+            <div className="card book-card">
                 <img src={props.book_thumbnail} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{props.book_name}</h5>
@@ -64,10 +65,11 @@ function BookCardDash(props) {
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">{props.book_author}</li>
                 </ul>
-                <div className="card-body">
-                    <button onClick={handleRemove}>Remove</button>
+                <div className="card-body" style={{display:"flex", justifyContent:"center"}}>
+                    <button className="card-button" onClick={handleRemove}>Remove</button>
                 </div>
             </div>
+        </div>
         </div>
     )
 

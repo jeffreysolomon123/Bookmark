@@ -77,19 +77,10 @@ function Dashboard() {
             displayDashboardButton = "none"
             displayLogOutButton = "block"
             />
-
-            
-
-        {userInfo && (
-            <div> 
-                
-                <h1>email: {userInfo.email}</h1>
-            </div>
-        )}
-        <h2>My Books: </h2>
+        <h2 className="galleryheading">My Books</h2>
         
 
-        
+        <div className="seach-items-dashboard">
         {retrievedBooks.map((eachBook)=> (
             <BookCardDash 
             book_id = {eachBook.book_id}
@@ -98,6 +89,8 @@ function Dashboard() {
             book_thumbnail = {eachBook.book_thumbnail}
             />
         ))}
+        </div>
+        
        
         
         </div>

@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function BookCard(props) {
   const navigate = useNavigate();
-  const [buttonColour, setButtonColour] = useState('grey');
+  
   const [buttonText, setButtonText] = useState('Mark Read');
 
 
@@ -42,8 +42,9 @@ function BookCard(props) {
 
   }
   return (
-    <div>
-      <div className="card book-card" style={{ width: "200px" }}>
+    <div style={{display:"flex", justifyContent:"center"}}>
+    <div className="totalbookcardhome">
+      <div className="card book-card">
         <img src={props.img} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{props.name}</h5>
@@ -51,10 +52,11 @@ function BookCard(props) {
         <ul className="list-group list-group-flush">
           <li className="list-group-item">{props.author}</li>
         </ul>
-        <div className="card-body">
-          <button style={{ backgroundColor: buttonColour }} onClick={handleMarkReadButton}>{buttonText}</button>
+        <div className="card-body" style={{display:"flex", justifyContent:"center"}}>
+          <button className="card-button" onClick={handleMarkReadButton}>{buttonText}</button>
         </div>
       </div>
+    </div>
     </div>
   );
 }

@@ -1,1 +1,208 @@
 @import "tailwindcss";
+
+
+
+.mynavbar {
+    background-color: #eaf2ff !important;
+    
+}
+
+
+.mynavlogotext{
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #14202b;
+
+}
+
+
+.mybooksbtn{
+    background-color: #14202b00;
+    border: 2px solid #14202b;
+    border-radius: 25px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #14202b;
+    font-size: 12px ;
+
+}
+
+.mybooksbtn:hover {
+    background-color: #f8fbff00;
+    color: #000000;
+    border-color: #14202b;
+    
+}
+
+
+.myloginbtn {
+    background-color: #14202b00;
+    border: 2px solid #14202b;
+    border-radius: 25px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #14202b;
+    font-size: 12px ;
+}
+
+.myloginbtn:hover{
+    background-color: #f8fbff00;
+    color: #000000;
+    border-color: #14202b;
+}
+
+.mysignupnbtn {
+    background-color: #14202b00;
+    border: 2px solid #14202b;
+    border-radius: 25px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #14202b;
+    font-size: 12px ;
+}
+
+.mysignupnbtn:hover{
+    background-color: #f8fbff00;
+    color: #000000;
+    border-color: #14202b;
+}
+
+
+.mylogoutbtn {
+    background-color: #14202b00;
+    border: 2px solid #14202b;
+    border-radius: 25px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: #14202b;
+    font-size: 12px ;
+}
+
+.mylogoutbtn:hover{
+    background-color: #f8fbff00;
+    color: #000000;
+    border-color: #14202b;
+}
+
+.mygalleryinput{
+    width: 600px;
+    height: 50px;
+    border: 3px solid black;
+    background-color: white ;
+    border-radius: 30px;
+    padding: 20px 20px;
+    font-size: 16px;
+    margin-top: 30px;
+
+
+}
+
+.myform {
+    display: flex;
+    justify-content: center;
+}
+
+.galleryheading {
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+    color: #000000;
+    margin-top: 30px;
+    text-align: center;
+    
+
+}
+
+
+
+
+  /* Ensure BookCard takes full width of grid cell */
+  .totalbookcardhome {
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 500px;
+    margin-right: 500px;
+  }
+.totalbookcarddashboard{
+    margin-top: 30px;
+    width: 100%;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+@media (max-width: 900px) {
+    .totalbookcarddashboard{
+        margin-left: 20px;
+    margin-right: 20px;
+    }
+    
+  }
+
+  @media (max-width: 900px) {
+    .totalbookcardhome{
+        margin-left: 20px;
+    margin-right: 20px;
+    }
+    
+  }
+
+  .logintext{
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  }
+
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+  
+  /* Optional: Improve card appearance */
+  .book-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    
+  }
+  
+  .book-card img {
+    height: 200px;
+    object-fit:contain
+  }
+
+  .card-title {
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  }
+  .list-group-item{
+    text-align: center;
+  }
+
+  .card-button {
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  background-color: #000000;
+  color: white;
+  padding: 5px 20px;
+  border-radius: 20px;
+
+  }

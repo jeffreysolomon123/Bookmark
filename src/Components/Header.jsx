@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import '../App.css';
 
 function Header(props) {
   const navigate = useNavigate();
@@ -27,13 +28,13 @@ function Header(props) {
   }
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar mynavbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand ms-3" href="/">
-            Books I've Read
+          <a class="navbar-brand mynavlogotext ms-3" href="/">
+            BookMark
           </a>
           <button
-            class="btn btn-primary ms-auto"
+            class="btn myloginbtn btn-primary ms-auto"
             style={{ display: props.displayLoginButton }}
             type="button"
             onClick={handleLoginClick}
@@ -41,15 +42,15 @@ function Header(props) {
             Login
           </button>
           <button
-            class="btn btn-primary ms-auto"
+            className="btn mybooksbtn btn-primary ms-auto"
             style={{ display: props.displayDashboardButton }}
             type="button"
             onClick={handleDashboardClick}
           >
-            My Books
+            My Books ➔
           </button>
           <button
-            class="btn btn-primary ms-2"
+            class="btn mysignupnbtn mybtn btn-primary ms-2"
             style={{ display: props.displaySignUpButton }}
             type="button"
             onClick={handleSignUpClick}
@@ -57,7 +58,7 @@ function Header(props) {
             Sign Up
           </button>
           <button
-            class="btn btn-primary ms-2"
+            class="btn mylogoutbtn btn-primary ms-2"
             style={{ display: props.displayLogOutButton }}
             type="button"
             onClick={handleLogOutClick}

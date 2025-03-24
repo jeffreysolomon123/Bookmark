@@ -50,10 +50,14 @@ function Gallery(props) {
 
   return(
     <div>
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-      <form className="d-flex ms-auto me-3" role="search" method="post">
+      <div style={{display:"flex" , justifyContent:"center"}}>
+      <h1 className="galleryheading">Search for a Book! <span className="mygalleryheadingword"></span></h1>
+      </div>
+      <div className="galleryinputform">
+      <form className="d-flex myform ms-auto me-3" role="search" method="post">
+        
         <input
-          className="form-control me-2"
+          className="me-2 mygalleryinput"
           type="search"
           placeholder="Search"
           aria-label="Search"
@@ -62,8 +66,10 @@ function Gallery(props) {
           onSubmit={e => { e.preventDefault(); }}
           onKeyDown={(e) => { e.key === 'Enter' && e.preventDefault(); }}
         ></input>
+        
       </form>
-    </nav>
+      </div>
+   
     <div className="seach-items-home">
       {loading ? <p>Loading Books...</p> : null}
       {error ? <p>Error Fetching books!</p> : null}
